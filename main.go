@@ -1,5 +1,10 @@
 package main 
 
+import (
+	"fmt"
+	"go_todoapp/config"
+)
+
 func main() {
 	fmt.Println(config.Config.Port)
 	fmt.Println(config.Config.SQLDriver)

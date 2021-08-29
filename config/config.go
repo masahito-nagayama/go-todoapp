@@ -1,5 +1,10 @@
 package config
 
+import (
+	"log"
+	"gopkg.in/go-ini/ini.v1"
+)
+
 type ConfigList struct {
 	Port string
 	SQLDriver string
@@ -14,7 +19,7 @@ func init() {
 }
 
 func LoadConfig() {
-	cfg, err := ini.Load("config.ini")
+	cfg, err := ini.Load("config/config.ini")
 	if err != nil {
 		log.Fatalln(err)
 	}
