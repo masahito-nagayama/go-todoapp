@@ -1,7 +1,6 @@
 package main 
 
 import (
-	"fmt"
 	"go_todoapp/app/models"
 )
 
@@ -40,9 +39,13 @@ func main() {
 	// for _, v := range todos {
 	// 	fmt.Println(v)
 	// }
-	user2, _ := models.GetUser(3)
-	todos, _ := user2.GetTodosByUser()
-	for _, v := range todos {
-		fmt.Println(v)
-	} 
+	// user2, _ := models.GetUser(3)
+	// todos, _ := user2.GetTodosByUser()
+	// for _, v := range todos {
+	// 	fmt.Println(v)
+	// } 
+
+	t, _ := models.GetTodo(1)
+	t.Content = "Update Todo"
+	t.UpdateTodo()
 }
