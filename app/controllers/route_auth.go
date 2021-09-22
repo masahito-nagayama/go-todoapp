@@ -27,6 +27,6 @@ func signup(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func  login(w http.ResponseWriter, r *http.Request) {
-	generateHTML(w, nil, "layout", "publib_bavbar", "login")
+func login(w http.ResponseWriter, r *http.Request) {
+	generateHTML(w, nil, "layout", "public_navbar", "login")
 }
