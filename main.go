@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	// "go_todoapp/app/controllers"
+	"go_todoapp/app/controllers"
 	"go_todoapp/app/models"
 )
 
